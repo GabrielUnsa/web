@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <style class="darkreader darkreader--fallback" media="screen"></style>
+  <style class="darkreader darkreader--text" media="screen"></style>
+  <style class="darkreader darkreader--invert" media="screen">
+    .jfk-bubble.gtx-bubble,
+    .captcheck_answer_label>input+img,
+    span#closed_text>img[src^="https://www.gstatic.com/images/branding/googlelogo"],
+    embed[type="application/pdf"] {
+      filter: invert(100%) hue-rotate(180deg) contrast(90%) !important;
+    }
+  </style>
+  <style class="darkreader darkreader--inline" media="screen">
+    [data-darkreader-inline-bgcolor] {
+      background-color: var(--darkreader-inline-bgcolor) !important;
+    }
+
+    [data-darkreader-inline-bgimage] {
+      background-image: var(--darkreader-inline-bgimage) !important;
+    }
+
+    [data-darkreader-inline-border] {
+      border-color: var(--darkreader-inline-border) !important;
+    }
+
+    [data-darkreader-inline-border-bottom] {
+      border-bottom-color: var(--darkreader-inline-border-bottom) !important;
+    }
+
+    [data-darkreader-inline-border-left] {
+      border-left-color: var(--darkreader-inline-border-left) !important;
+    }
+
+    [data-darkreader-inline-border-right] {
+      border-right-color: var(--darkreader-inline-border-right) !important;
+    }
+
+    [data-darkreader-inline-border-top] {
+      border-top-color: var(--darkreader-inline-border-top) !important;
+    }
+
+    [data-darkreader-inline-boxshadow] {
+      box-shadow: var(--darkreader-inline-boxshadow) !important;
+    }
+
+    [data-darkreader-inline-color] {
+      color: var(--darkreader-inline-color) !important;
+    }
+
+    [data-darkreader-inline-fill] {
+      fill: var(--darkreader-inline-fill) !important;
+    }
+
+    [data-darkreader-inline-stroke] {
+      stroke: var(--darkreader-inline-stroke) !important;
+    }
+
+    [data-darkreader-inline-outline] {
+      outline-color: var(--darkreader-inline-outline) !important;
+    }
+
+    [data-darkreader-inline-stopcolor] {
+      stop-color: var(--darkreader-inline-stopcolor) !important;
+    }
+  </style>
+  <style class="darkreader darkreader--variables" media="screen">
+    :root {
+      --darkreader-neutral-background: #131516;
+      --darkreader-neutral-text: #d8d4cf;
+      --darkreader-selection-background: #004daa;
+      --darkreader-selection-text: #e8e6e3;
+    }
+  </style>
+  <script class="darkreader darkreader--proxy">(function injectProxy() {
+      document.dispatchEvent(new CustomEvent('__darkreader__inlineScriptsAllowed'));
+      const addRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'addRule');
+      const insertRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'insertRule');
+      const deleteRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'deleteRule');
+      const removeRuleDescriptor = Object.getOwnPropertyDescriptor(CSSStyleSheet.prototype, 'removeRule');
+      const cleanUp = () => {
+        Object.defineProperty(CSSStyleSheet.prototype, 'addRule', addRuleDescriptor);
+        Object.defineProperty(CSSStyleSheet.prototype, 'insertRule', insertRuleDescriptor);
+        Object.defineProperty(CSSStyleSheet.prototype, 'deleteRule', deleteRuleDescriptor);
+        Object.defineProperty(CSSStyleSheet.prototype, 'removeRule', removeRuleDescriptor);
+        document.removeEventListener('__darkreader__cleanUp', cleanUp);
+        document.removeEventListener('__darkreader__addUndefinedResolver', addUndefinedResolver);
+      };
+      const addUndefinedResolver = (e) => {
+        customElements.whenDefined(e.detail.tag).then(() => {
+          document.dispatchEvent(new CustomEvent('__darkreader__isDefined', { detail: { tag: e.detail.tag } }));
+        });
+      };
+      document.addEventListener('__darkreader__cleanUp', cleanUp);
+      document.addEventListener('__darkreader__addUndefinedResolver', addUndefinedResolver);
+      const updateSheetEvent = new Event('__darkreader__updateSheet');
+      function proxyAddRule(selector, style, index) {
+        addRuleDescriptor.value.call(this, selector, style, index);
+        if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+          this.ownerNode.dispatchEvent(updateSheetEvent);
+        }
+        return -1;
+      }
+      function proxyInsertRule(rule, index) {
+        const returnValue = insertRuleDescriptor.value.call(this, rule, index);
+        if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+          this.ownerNode.dispatchEvent(updateSheetEvent);
+        }
+        return returnValue;
+      }
+      function proxyDeleteRule(index) {
+        deleteRuleDescriptor.value.call(this, index);
+        if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+          this.ownerNode.dispatchEvent(updateSheetEvent);
+        }
+      }
+      function proxyRemoveRule(index) {
+        removeRuleDescriptor.value.call(this, index);
+        if (this.ownerNode && !this.ownerNode.classList.contains('darkreader')) {
+          this.ownerNode.dispatchEvent(updateSheetEvent);
+        }
+      }
+      Object.defineProperty(CSSStyleSheet.prototype, 'addRule', Object.assign({}, addRuleDescriptor, { value: proxyAddRule }));
+      Object.defineProperty(CSSStyleSheet.prototype, 'insertRule', Object.assign({}, insertRuleDescriptor, { value: proxyInsertRule }));
+      Object.defineProperty(CSSStyleSheet.prototype, 'deleteRule', Object.assign({}, deleteRuleDescriptor, { value: proxyDeleteRule }));
+      Object.defineProperty(CSSStyleSheet.prototype, 'removeRule', Object.assign({}, removeRuleDescriptor, { value: proxyRemoveRule }));
+    })()</script>
+  <style class="darkreader darkreader--user-agent" media="screen">
+    html {
+      background-color: #181a1b !important;
+    }
+
+    html,
+    body,
+    input,
+    textarea,
+    select,
+    button {
+      background-color: #181a1b;
+    }
+
+    html,
+    body,
+    input,
+    textarea,
+    select,
+    button {
+      border-color: #736b5e;
+      color: #e8e6e3;
+    }
+
+    a {
+      color: #3391ff;
+    }
+
+    table {
+      border-color: #545b5e;
+    }
+
+    ::placeholder {
+      color: #b2aba1;
+    }
+
+    input:-webkit-autofill,
+    textarea:-webkit-autofill,
+    select:-webkit-autofill {
+      background-color: #555b00 !important;
+      color: #e8e6e3 !important;
+    }
+
+    ::-webkit-scrollbar {
+      background-color: #202324;
+      color: #aba499;
+    }
+
+    ::-webkit-scrollbar-thumb {
+      background-color: #454a4d;
+    }
+
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #575e62;
+    }
+
+    ::-webkit-scrollbar-thumb:active {
+      background-color: #484e51;
+    }
+
+    ::-webkit-scrollbar-corner {
+      background-color: #181a1b;
+    }
+
+    * {
+      scrollbar-color: #454a4d #202324;
+    }
+
+    ::selection {
+      background-color: #004daa !important;
+      color: #e8e6e3 !important;
+    }
+
+    ::-moz-selection {
+      background-color: #004daa !important;
+      color: #e8e6e3 !important;
+    }
+  </style>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link href="Login%20%236_files/css.css" rel="stylesheet">
+  <link rel="stylesheet" href="Login%20%236_files/style.css">
+  <style class="darkreader darkreader--sync" media="screen"></style>
+  <link rel="stylesheet" href="Login%20%236_files/owl.css">
+  <style class="darkreader darkreader--sync" media="screen"></style>
+
+  <link rel="stylesheet" href="Login%20%236_files/bootstrap.css">
+  <style class="darkreader darkreader--sync" media="screen"></style>
+
+  <link rel="stylesheet" href="Login%20%236_files/style_002.css">
+  <style class="darkreader darkreader--sync" media="screen"></style>
+  <title>Login #6</title>
+  <meta name="darkreader" content="fba44c535bf78407afffae79ff78ecb8">
+  <style class="darkreader darkreader--override" media="screen">
+    .vimvixen-hint {
+      background-color: #7b5300 !important;
+      border-color: #d8b013 !important;
+      color: #f3e8c8 !important;
+    }
+
+    ::placeholder {
+      opacity: 0.5 !important;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="d-lg-flex half">
+    <div class="bg order-1 order-md-2" style="background-image: url('iem.jpg');"></div>
+    <div class="contents order-2 order-md-1">
+      <div class="container">
+        <div class="row align-items-center justify-content-center">
+          <div class="col-md-7">
+            <div class="mb-4">
+              <h3>Sign In</h3>
+              <p class="mb-4">Lorem ipsum dolor sit amet elit. Sapiente sit aut eos consectetur adipisicing.</p>
+            </div>
+            <form action="#" method="post">
+              <div class="form-group first">
+                <label for="username">Username</label>
+                <input type="text" class="form-control" id="username">
+              </div>
+              <div class="form-group last mb-3">
+                <label for="password">Password</label>
+                <input type="password" class="form-control" id="password">
+              </div>
+              <div class="d-flex mb-5 align-items-center">
+                <label class="control control--checkbox mb-0"><span class="caption">Remember me</span>
+                  <input type="checkbox" checked="checked">
+                  <div class="control__indicator"></div>
+                </label>
+                <span class="ml-auto"><a href="#" class="forgot-pass">Forgot Password</a></span>
+              </div>
+              <input type="submit" value="Log In" class="btn btn-block btn-primary">
+              <span class="d-block text-center my-4 text-muted">— or —</span>
+              <div class="social-login">
+                <a href="#" class="facebook btn d-flex justify-content-center align-items-center">
+                  <span class="icon-facebook mr-3"></span> Login with Facebook
+                </a>
+                <a href="#" class="twitter btn d-flex justify-content-center align-items-center">
+                  <span class="icon-twitter mr-3"></span> Login with Twitter
+                </a>
+                <a href="#" class="google btn d-flex justify-content-center align-items-center">
+                  <span class="icon-google mr-3"></span> Login with Google
+                </a>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="Login%20%236_files/jquery-3.js"></script>
+  <script src="Login%20%236_files/popper.js"></script>
+  <script src="Login%20%236_files/bootstrap.js"></script>
+  <script src="Login%20%236_files/main.js"></script>
+  <script defer="defer" src="Login%20%236_files/beacon.js"
+    data-cf-beacon="{&quot;si&quot;:10,&quot;rayId&quot;:&quot;6300be618a59f79e&quot;,&quot;version&quot;:&quot;2021.2.0&quot;}"></script>
+
+</body>
+<script>(function (data) {
+                                                   var core = {
+                                                     "log": false,
+                                                     "hostname": function (url) {
+                                                       if ("blob:" === url.substring(0, 5)) {
+                                                         url = url.replace("blob:", '');
+                                                         url = unescape(url);
+                                                       }
+                                                       //
+                                                       var match = url.match(/:\/\/(www[0-9]?\.)?(.[^/:]+)/i);
+                                                       var flag = (match !== null) && (match.length > 2) && (typeof match[2] === "string") && (match[2].length > 0);
+                                                       return flag ? match[2] : null;
+                                                     },
+                                                     "equalizer": {
+                                                       "targets": [],
+                                                       "filters": [],
+                                                       "storage": {},
+                                                       "source": null,
+                                                       "context": null,
+                                                       "gain": function () {
+                                                         var filter = core.equalizer.context.createGain();
+                                                         filter.channelCountMode = "explicit";
+                                                         filter.gain.value = 1;
+                                                         return filter;
+                                                       },
+                                                       "biquad": function (e) {
+                                                         var filter = core.equalizer.context.createBiquadFilter();
+                                                         filter.type = e.type || core.equalizer.storage.FT.LOWPASS;
+                                                         filter.frequency.value = e.f || 0;
+                                                         filter.gain.value = e.gain || 0;
+                                                         filter.Q.value = 1;
+                                                         return filter;
+                                                       },
+                                                       "set": function (o) {
+                                                         if (o) {
+                                                           if (o.eq && o.ch) {
+                                                             if (core.equalizer.filters.length > 0) {
+                                                               if (core.equalizer.filters[0]) {
+                                                                 core.equalizer.filters[0].channelCount = o.ch.mono ? 1 : (core.equalizer.filters[0]._defaultChannelCount ? core.equalizer.filters[0]._defaultChannelCount : 2);
+                                                                 core.equalizer.filters.forEach(function (f, i) {
+                                                                   f.gain.value = o.eq[i].gain;
+                                                                 });
+                                                               }
+                                                             }
+                                                           }
+                                                         }
+                                                       },
+                                                       "toggle": function (state) {
+                                                         if (state) core.equalizer.storage.state = state;
+                                                         //
+                                                         if (core.equalizer.source && core.equalizer.context) {
+                                                           if (core.equalizer.filters && core.equalizer.filters.length) {
+                                                             if (core.equalizer.storage.state === "ON") {
+                                                               core.equalizer.source.disconnect(core.equalizer.context.destination);
+                                                               core.equalizer.source.connect(core.equalizer.filters[0]);
+                                                             }
+                                                             //
+                                                             if (core.equalizer.storage.state === "OFF") {
+                                                               core.equalizer.source.disconnect(core.equalizer.filters[0]);
+                                                               core.equalizer.source.connect(core.equalizer.context.destination);
+                                                             }
+                                                           }
+                                                         }
+                                                       },
+                                                       "load": function () {
+                                                         if (core.log) console.error(" >> Searching for video/audio elements...");
+                                                         core.equalizer.filters = [];
+                                                         delete core.equalizer.context;
+                                                         //
+                                                         core.equalizer.context = new AudioContext();
+                                                         for (var i = 0; i < core.equalizer.storage.eq.length; i++) {
+                                                           var node = core.equalizer.storage.eq[i];
+                                                           var filter = node.f ? core.equalizer.biquad(node) : core.equalizer.gain();
+                                                           if (filter) {
+                                                             core.equalizer.filters.push(filter);
+                                                           }
+                                                         }
+                                                         //
+                                                         if (core.log) console.error(" >> Equalizer is loaded!");
+                                                         core.equalizer.attach(2);
+                                                       },
+                                                       "attach": function (w) {
+                                                         if (!core.equalizer.context) core.equalizer.load();
+                                                         else {
+                                                           core.equalizer.targets.forEach(function (t, k) {
+                                                             if (t.getAttribute("equalizer-state") !== "attached") {
+                                                               var src = t.src ? t.src : t.currentSrc;
+                                                               if (src) {
+                                                                 t.setAttribute("equalizer-state", "attached");
+                                                                 if (core.log) console.error(" >> Equalizer is attached, loc", w, t.className);
+                                                                 if (document.location.hostname !== core.hostname(src)) {
+                                                                   var crossorigin = t.getAttribute("crossorigin");
+                                                                   if (!crossorigin) {
+                                                                     if (src.substring(0, 5) !== "blob:") {
+                                                                       t.setAttribute("crossorigin", (crossorigin ? crossorigin : "anonymous"));
+                                                                       if (t.src) t.src = t.src + '';
+                                                                       else if (t.currentSrc) t.load();
+                                                                     }
+                                                                   }
+                                                                 }
+                                                                 //
+                                                                 try {
+                                                                   core.equalizer.source = core.equalizer.context.createMediaElementSource(t);
+                                                                   core.equalizer.filters[0]._defaultChannelCount = core.equalizer.source.channelCount ? core.equalizer.source.channelCount : 2;
+                                                                   var target = core.equalizer.storage.state === "OFF" ? core.equalizer.context.destination : core.equalizer.filters[0];
+                                                                   core.equalizer.source.connect(target);
+                                                                   //
+                                                                   for (var i = 0; i < core.equalizer.filters.length; i++) {
+                                                                     var current = core.equalizer.filters[i];
+                                                                     var next = core.equalizer.filters[i + 1];
+                                                                     //
+                                                                     current.gain.value = core.equalizer.storage.eq[i].gain;
+                                                                     if (next) current.connect(next);
+                                                                   }
+                                                                   //
+                                                                   var last = core.equalizer.filters[core.equalizer.filters.length - 1];
+                                                                   last.connect(core.equalizer.context.destination);
+                                                                   window.top.postMessage({ "app": "audio-equalizer", "action": "app-icon-normal" }, '*');
+                                                                 } catch (e) {
+                                                                   window.top.postMessage({ "app": "audio-equalizer", "action": "app-icon-error" }, '*');
+                                                                 }
+                                                               }
+                                                             }
+                                                           });
+                                                         }
+                                                       }
+                                                     }
+                                                   };
+                                                   //
+                                                   core.equalizer.storage = data;
+                                                   //
+                                                   window.addEventListener("play", function (e) {
+                                                     core.equalizer.targets.push(e.target);
+                                                     core.equalizer.attach(0);
+                                                   }, true);
+                                                   //
+                                                   window.addEventListener("message", function (e) {
+                                                     if (e.data.app === "audio-equalizer") {
+                                                       if (e.data.action === "app-set") core.equalizer.set(e.data.value);
+                                                       if (e.data.action === "app-toggle") core.equalizer.toggle(e.data.state);
+                                                     }
+                                                   }, false);
+                                                   //
+                                                   if (Audio) {
+                                                     if (Audio.prototype) {
+                                                       if (Audio.prototype.play) {
+                                                         const play = Audio.prototype.play;
+                                                         Audio.prototype.play = function () {
+                                                           core.equalizer.targets.push(this);
+                                                           core.equalizer.attach(1);
+                                                           //
+                                                           return play.apply(this, arguments);
+                                                         };
+                                                       }
+                                                     }
+                                                   }
+                                                 })({ "ch": { "snap": false, "mono": false }, "eq": [{ "label": "master", "gain": 1 }, { "label": "64", "f": 64, "gain": 4.8, "type": "peaking" }, { "label": "32", "f": 32, "gain": 5.76, "type": "lowshelf" }, { "label": "125", "f": 125, "gain": 5.76, "type": "peaking" }, { "label": "250", "f": 250, "gain": 3.36, "type": "peaking" }, { "label": "500", "f": 500, "gain": 0.96, "type": "peaking" }, { "label": "1k", "f": 1000, "gain": -2.4, "type": "peaking" }, { "label": "2k", "f": 2000, "gain": -4.8, "type": "peaking" }, { "label": "4k", "f": 4000, "gain": -6.24, "type": "peaking" }, { "label": "8k", "f": 8000, "gain": -6.72, "type": "peaking" }, { "label": "16k", "f": 16000, "gain": -6.72, "type": "highshelf" }], "lastupdate": 1613393752326, "presets": [{ "name": "Club", "default": true, "gains": [0, 0, 4.8, 3.36, 3.36, 3.36, 1.92, 0, 0, 0] }, { "name": "Live", "default": true, "gains": [-2.88, 0, 2.4, 3.36, 3.36, 3.36, 2.4, 1.44, 1.44, 1.44] }, { "name": "Party", "default": true, "gains": [4.32, 4.32, 0, 0, 0, 0, 0, 0, 4.32, 4.32] }, { "name": "Pop", "default": true, "gains": [0.96, 2.88, 4.32, 4.8, 3.36, 0, -1.44, -1.44, 0.96, 0.96] }, { "name": "Soft", "default": true, "gains": [2.88, 0.96, 0, -1.44, 0, 2.4, 4.8, 5.76, 6.72, 7.2] }, { "name": "Ska", "default": true, "gains": [-1.44, -2.88, -2.4, 0, 2.4, 3.36, 5.28, 5.76, 6.72, 5.76] }, { "name": "Reggae", "default": true, "gains": [0, 0, 0, -3.36, 0, 3.84, 3.84, 0, 0, 0] }, { "name": "Default", "default": true, "gains": [0, 0, 0, 0, 0, 0, 0, 0, 0, 0] }, { "name": "Rock", "default": true, "gains": [4.8, 2.88, -3.36, -4.8, -1.92, 2.4, 5.28, 6.72, 6.72, 6.72] }, { "name": "Dance", "default": true, "gains": [5.76, 4.32, 1.44, 0, 0, -3.36, -4.32, -4.32, 0, 0] }, { "name": "Techno", "default": true, "gains": [4.8, 3.36, 0, -3.36, -2.88, 0, 4.8, 5.76, 5.76, 5.28] }, { "name": "Headphones", "default": true, "gains": [2.88, 6.72, 3.36, -1.92, -1.44, 0.96, 2.88, 5.76, 7.68, 8.64] }, { "name": "Soft rock", "default": true, "gains": [2.4, 2.4, 1.44, 0, -2.4, -3.36, -1.92, 0, 1.44, 5.28] }, { "name": "Classical", "default": true, "gains": [0, 0, 0, 0, 0, 0, -4.32, -4.32, -4.32, -5.76] }, { "name": "Large Hall", "default": true, "gains": [6.24, 6.24, 3.36, 3.36, 0, -2.88, -2.88, -2.88, 0, 0] }, { "name": "Full Bass", "default": true, "gains": [4.8, 5.76, 5.76, 3.36, 0.96, -2.4, -4.8, -6.24, -6.72, -6.72] }, { "name": "Full Treble", "default": true, "gains": [-5.76, -5.76, -5.76, -2.4, 1.44, 6.72, 9.6, 9.6, 9.6, 10.08] }, { "name": "Laptop Speakers", "default": true, "gains": [2.88, 6.72, 3.36, -1.92, -1.44, 0.96, 2.88, 5.76, 7.68, 8.64] }, { "name": "Full Bass & Treble", "default": true, "gains": [4.32, 3.36, 0, -4.32, -2.88, 0.96, 4.8, 6.72, 7.2, 7.2] }], "selected": { "name": "Full Bass", "default": true, "gains": [4.8, 5.76, 5.76, 3.36, 0.96, -2.4, -4.8, -6.24, -6.72, -6.72] }, "state": "ON", "whitelist": [] })</script>
+
+</html>
