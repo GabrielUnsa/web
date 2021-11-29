@@ -21,6 +21,16 @@ nav{
 main{
   height: 700px;
   background-color: #ccc;
+  padding: 30px;
+}
+
+embed{
+  width: 50%;
+  height:300px;
+}
+
+h1{
+  margin-top: 0;
 }
 
 footer{
