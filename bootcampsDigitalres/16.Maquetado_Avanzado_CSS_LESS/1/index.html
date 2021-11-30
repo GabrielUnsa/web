@@ -19,6 +19,45 @@
       <h1>Multimedia</h1>
       <h2>Embed</h2>
       <embed src="multimedia/diario">
+      <!--object data="multimedia/diario"></object-->
+      <h2>Video 1</h2>
+      <video id="blues">
+        <source src="./multimedia/bb" type="video/mp4" media="">
+      </video>
+      <br>
+      <button id="b_play"> Play </button>
+      <button id="b_pausa"> Pausa </button>
+      <script charset="utf-8">
+        var mivideo=document.getElementById('blues')
+        document.getElementById('b_play').onclick=reproduccion;
+        document.getElementById('b_pausa').onclick=parar;
+        function reproduccion(){
+          mivideo.play();
+        }
+        function parar(){
+          mivideo.pause();
+        }
+      </script>
+
+    <h2>Video 2</h2>
+    <video id="phil">
+      <source src="./multimedia/aire" type="video/mp4" media="">
+    </video>  
+    <br></br>
+    <img id="play" src="img/play" alt="play" width="64" height="64" style="cursor: pointer;"/>
+    <img id="pause" src="img/pause" alt="pause" width="64" height="64" style="cursor: pointer;"/>
+    <script charset="utf-8">
+      var collins=document.getElementById('phil')
+      document.getElementById('play').onclick=reproduccion;
+      document.getElementById('pause').onclick=parar;
+      function reproduccion(){
+        collins.play();
+      }
+      function parar(){
+        collins.pause();
+      }
+    </script>
+
     </main>
     <footer>
     

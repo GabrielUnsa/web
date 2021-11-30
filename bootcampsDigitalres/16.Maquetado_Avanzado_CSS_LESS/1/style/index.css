@@ -19,12 +19,12 @@ nav{
 }
 
 main{
-  height: 700px;
+  height: auto;
   background-color: #ccc;
   padding: 30px;
 }
 
-embed{
+embed, object{
   width: 50%;
   height:300px;
 }
