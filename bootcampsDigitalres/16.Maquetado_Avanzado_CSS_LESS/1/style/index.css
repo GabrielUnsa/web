@@ -33,6 +33,11 @@ h1{
   margin-top: 0;
 }
 
+#parke{
+  width: 600px;
+  height: auto;
+}
+
 footer{
   height: 400px;
   background-color: black;
