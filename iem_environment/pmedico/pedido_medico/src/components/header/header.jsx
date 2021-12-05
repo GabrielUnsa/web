@@ -1,5 +1,6 @@
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, DropdownButton, ButtonGroup, Dropdown } from 'react-bootstrap';
 import { RiUserSearchLine } from 'react-icons/ri';
+import { FaUserCircle } from 'react-icons/fa';
 import '../header/header.css';
 
 const Header = () => (
@@ -10,7 +11,7 @@ const Header = () => (
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
-          className="me-auto my-2 my-lg-0"
+          className="me-5 my-2 my-lg-0"
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
@@ -26,15 +27,21 @@ const Header = () => (
             <NavDropdown.Item href="#action4">Baja</NavDropdown.Item>
           </NavDropdown>
         </Nav>
-        <Form className="d-flex">
+        <Form className="d-flex me-auto">
           <FormControl
             type="search"
             placeholder="Buscar"
             className="me-2"
             aria-label="Buscar"
           />
-          <Button variant="outline-dark"> <RiUserSearchLine /> </Button>
+          <Button variant="outline-dark"> <RiUserSearchLine /> </Button>  
         </Form>
+          <DropdownButton align="end" title="Usuario" variant='outline-dark' id="dropdown-menu-align-end">
+            <Dropdown.Item eventKey="1">Perfil</Dropdown.Item>
+            <Dropdown.Item eventKey="2">Cambiar Contraseña</Dropdown.Item>
+            <Dropdown.Divider />
+            <Dropdown.Item eventKey="3">Cerrar Sesion</Dropdown.Item>
+          </DropdownButton>
       </Navbar.Collapse>
     </Container>
   </Navbar>

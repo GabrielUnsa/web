@@ -1,12 +1,13 @@
 import unsa from './img/logoUnsa.png';
 import iem from './img/logoIem.svg';
-import { Container } from '@mui/material';
+import { Container, Box } from '@mui/material';
 import './login.css'
 
 
 const LoginHeader = () =>  (
   <header>
-    <Container className="login-header">
+    <Container>
+      <Box className="login-header">
       <img src={unsa} alt="Logo Unsa" />
       <div className="tittleHeader">
         <div><span> Universida Nacional de Salta </span></div>
@@ -14,6 +15,7 @@ const LoginHeader = () =>  (
         <div><span> "Dr. Arturo Oñativia" </span></div>
       </div>
       <img src={iem} alt="Logo IEM" />
+      </Box>
     </Container>
   </header>
   );

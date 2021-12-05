@@ -1,7 +1,6 @@
-  import { Form, Card, Button, Container, Col, Row, OverlayTrigger, Tooltip} from 'react-bootstrap';
-import user from '../../img/user.png';
+import { Form, Card, Button, Container, Col, Row, OverlayTrigger, Tooltip} from 'react-bootstrap';
+import user from './user.png';
 import './login.css';
-import { FiLogIn } from "react-icons/fi";
 
 const renderTooltip = (props) => (
   <Tooltip id="button-tooltip" {...props}>
@@ -18,21 +17,30 @@ const renderTooltip = (props) => (
           </Row>
         </Container>
         <Card.Body>
-          <Card.Title className="fs-2 text-center"> INICIE SESION </Card.Title>
+          <Card.Title className="fs-2 text-center"> Iniciar Sesión </Card.Title>
           <br />
           <Form>
-            <Form.Group className="mb-3 fs-4" controlId="formBasicEmail">
-              <Form.Label>Usuario</Form.Label>
-              <Form.Control type="username" placeholder="Usuario" />
-            </Form.Group>
-            <Form.Group className="mb-3 fs-4" controlId="formBasicPassword">
-              <Form.Label>Contraseña</Form.Label>
-              <Form.Control type="password" placeholder="Contraseña" />
-            </Form.Group>
-            <Container>            
+            <Form.Floating className="mb-3">
+              <Form.Control
+                id="username"
+                type="text"
+                placeholder="Usuario"
+              />
+              <label htmlFor="username"> Usuario </label>
+            </Form.Floating>
+            <Form.Floating>
+              <Form.Control
+                id="passuser"
+                type="password"
+                placeholder="Contraseña"
+              />
+              <label htmlFor="passuser"> Contraseña </label>
+            </Form.Floating>
+            <br />
+           <Container>            
               <Row className="justify-content-md-center">
                 <Button variant="outline-primary" type="submit" size="lg"> 
-                    Ingresar
+                    <span> Ingresar </span>
                  </Button>
               </Row>
             </Container>
@@ -46,6 +54,7 @@ const renderTooltip = (props) => (
         </OverlayTrigger>
         </Card>
       </Col>
+      <br />
     </Container>
 );
 

@@ -4,17 +4,15 @@ img{
 
 .tittleHeader{
   text-align: center;
-  font-size: 28px;
+  font-size: 26px;
 }
 
 .login-header{
   background-color: #c1eae2;
-  padding: 1%;
+  padding: 0.3%;
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
   align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
 }
 
 .cardLogin{
@@ -24,15 +22,7 @@ img{
 }
 
 .userImg{
-  max-height: 14rem;
-  max-width: 14rem;
+  max-height: 10rem;
+  max-width: 10rem;
 } 
-
-.blogin{
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  margin: 0 auto;
-}
 
