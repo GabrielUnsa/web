@@ -4,11 +4,14 @@ import Header from './components/header/header';
 import Footer from './components/footer/footer';
 //import LoginHeader from './components/login/hLogin';
 //import Login from './components/login/login';
+//import TableDocente from './components/index/tableDocentes/tableDocente';
+//import TitlePM from './components/index/titlePM/titlePM';
 
 function App() {
   return (
     <div>
       <Header />
+
       <Footer />
     </div>
      );

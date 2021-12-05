@@ -1,6 +1,5 @@
-import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, DropdownButton, ButtonGroup, Dropdown } from 'react-bootstrap';
+import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, DropdownButton, Dropdown } from 'react-bootstrap';
 import { RiUserSearchLine } from 'react-icons/ri';
-import { FaUserCircle } from 'react-icons/fa';
 import '../header/header.css';
 
 const Header = () => (
