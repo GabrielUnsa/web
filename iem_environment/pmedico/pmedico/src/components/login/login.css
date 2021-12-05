@@ -1,0 +1,37 @@
+img{
+  max-height: 10rem;
+}
+
+.tittleHeader{
+  text-align: center;
+  font-size: 28px;
+}
+
+.login-header{
+  background-color: #c1eae2;
+  padding: 1%;
+  display: inline-flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; 
+}
+
+.cardLogin{
+  margin-top: 1rem;
+  width: auto;
+  height: auto;
+}
+
+.userImg{
+  max-height: 14rem;
+  max-width: 14rem;
+} 
+
+.blogin{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin: 0 auto;
+}
+
