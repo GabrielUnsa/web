@@ -6,12 +6,15 @@ import Footer from './components/footer/footer';
 //import Login from './components/login/login';
 //import TableDocente from './components/index/tableDocentes/tableDocente';
 //import TitlePM from './components/index/titlePM/titlePM';
+import TitleNPM from './components/newpm/titleNPM';
+import NewPM from './components/newpm/newpm';
 
 function App() {
   return (
     <div>
       <Header />
-
+      <TitleNPM />
+      <NewPM />
       <Footer />
     </div>
      );
