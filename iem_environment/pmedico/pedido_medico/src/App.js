@@ -7,7 +7,7 @@ import Footer from './components/footer/footer';
 //import TableDocente from './components/index/tableDocentes/tableDocente';
 //import TitlePM from './components/index/titlePM/titlePM';
 import TitleNPM from './components/newpm/titleNPM';
-//import NewPM from './components/newpm/newpm';
+import NewPM from './components/newpm/newpm';
 //import TableSearchPersonal from './components/newpm/searchpersonal/searchp';
 
 function App() {
@@ -15,7 +15,7 @@ function App() {
     <div>
       <Header />
       <TitleNPM />
-      
+      <NewPM />
       <Footer />
     </div>
      );
