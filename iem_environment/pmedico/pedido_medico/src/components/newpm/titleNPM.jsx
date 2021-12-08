@@ -4,7 +4,7 @@ import './titleNPM.css';
 const TitleNPM = () => (
   <Container>
     <br />
-    <h2 className="titlenpm"> Nuevo Pedido Medico </h2>
+    <h2 className="titlenpm"> Nuevo Reconocimiento Medico </h2>
     <br /> 
   </Container>
 );
