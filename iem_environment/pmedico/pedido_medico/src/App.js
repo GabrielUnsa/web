@@ -1,4 +1,5 @@
-import React from 'react';
+import * as React from 'react';
+import { Routes, Route, Link } from 'react-router-dom';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/header';
 import Footer from './components/footer/footer';
@@ -12,10 +13,11 @@ import NewPM from './components/newpm/newpm';
 
 function App() {
   return (
-    <div>
+    <div className="App">
       <Header />
-      <TitleNPM />
-      <NewPM />
+        <Routes>
+          <Route path="/" element={<TitleNPM />} />
+        </Routes>
       <Footer />
     </div>
      );
