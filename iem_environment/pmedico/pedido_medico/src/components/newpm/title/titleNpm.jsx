@@ -1,5 +1,5 @@
 import { Container } from 'react-bootstrap';
-import './titleNPM.css';
+import './titleNpm.css';
 
 const TitleNPM = () => (
   <Container>

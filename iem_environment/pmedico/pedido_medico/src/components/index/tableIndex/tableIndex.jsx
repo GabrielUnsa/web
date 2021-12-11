@@ -1,8 +1,8 @@
 import { Table, Container, Button, Row, Col, Pagination } from 'react-bootstrap';
 import { AiOutlineFileAdd, AiFillEdit, AiOutlineFileSearch, AiOutlineDelete } from 'react-icons/ai';
-import './tableDocentes.css';
+import './tableIndex.css';
 
-const TableDocente = () => (
+const TableIndex = () => (
   <Container>
    <Table striped bordered hover>
       <thead>
@@ -164,4 +164,4 @@ const TableDocente = () => (
   </Container>
  );
 
-export default TableDocente;
+export default TableIndex;

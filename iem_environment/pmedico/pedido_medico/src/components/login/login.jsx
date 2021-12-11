@@ -1,5 +1,5 @@
 import { Form, Card, Button, Container, Col, Row, OverlayTrigger, Tooltip} from 'react-bootstrap';
-import user from './user.png';
+import user from './img/user.png';
 import './login.css';
 
 const renderTooltip = (props) => (

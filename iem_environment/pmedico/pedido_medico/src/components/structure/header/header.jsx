@@ -1,6 +1,6 @@
 import { Navbar, Container, Nav, NavDropdown, Form, FormControl, Button, DropdownButton, Dropdown } from 'react-bootstrap';
 import { RiUserSearchLine } from 'react-icons/ri';
-import '../header/header.css';
+import './header.css';
 
 const Header = () => (
   <header>

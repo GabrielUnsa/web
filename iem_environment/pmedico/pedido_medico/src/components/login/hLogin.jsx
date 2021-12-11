@@ -1,6 +1,6 @@
 import { Container } from 'react-bootstrap';
-import unsa from './logoUnsa.png';
-import iem from './logoIem.svg';
+import unsa from './img/logoUnsa.png';
+import iem from './img/logoIem.svg';
 import './login.css';
 
 const LoginHeader = () =>  (

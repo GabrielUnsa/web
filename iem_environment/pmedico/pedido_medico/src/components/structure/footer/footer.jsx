@@ -1,4 +1,4 @@
-import '../footer/footer.css';
+import './footer.css';
 import { Card } from 'react-bootstrap';
 
 const Footer = () => {

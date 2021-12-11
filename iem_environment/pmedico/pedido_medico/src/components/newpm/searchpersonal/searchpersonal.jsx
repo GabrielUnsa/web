@@ -1,7 +1,7 @@
 import { Table, Container, Button, Pagination, Form, FormControl } from 'react-bootstrap';
 import { AiOutlineFileAdd } from 'react-icons/ai';
 import { RiSearchLine } from 'react-icons/ri';
-import './searchp.css';
+import './searchpersonal.css';
 
 
 let active = 2;
