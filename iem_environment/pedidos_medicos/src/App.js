@@ -1,25 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import * as React from 'react';
+//import { Routes, Route, Link } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Header from './components/structure/header/header';
+import Footer from './components/structure/footer/footer';
+import LoginHeader from './components/login/hLogin';
+//import Login from './components/login/login';
+//import TableDocente from './components/index/tableDocentes/tableDocente';
+//import TitlePM from './components/index/titlePM/titlePM';
+//import TitleNPM from './components/newpm/title/titleNpm';
+//import NewPM from './components/newpm/newpm';
+//import TableSearchPersonal from './components/newpm/searchpersonal/searchp';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <LoginHeader />
     </div>
-  );
+     );
 }
 
 export default App;
+
