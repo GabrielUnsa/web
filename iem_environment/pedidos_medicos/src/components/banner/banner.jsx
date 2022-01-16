@@ -1,9 +1,9 @@
 import { Container } from 'react-bootstrap';
 import unsa from './img/logoUnsa.png';
-import iem from './img/logoIem.svg';
-import './login.css';
+import iem from './img/logoIem.png';
+import './banner.css';
 
-const LoginHeader = () =>  (
+const Banner = () =>  (
   <header>
     <Container fluid className="login-header">
       <img src={unsa} alt="Logo Unsa" />
@@ -17,4 +17,4 @@ const LoginHeader = () =>  (
   </header>
   );
 
-export default LoginHeader;
+export default Banner;

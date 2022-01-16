@@ -6,7 +6,7 @@ const Header = () => (
   <header>
     <Navbar className = "navBar">
     <Container fluid>
-      <Navbar.Brand href="#">Pedidos Medicos</Navbar.Brand>
+      <Navbar.Brand href="/">Pedidos Medicos</Navbar.Brand>
       <Navbar.Toggle aria-controls="navbarScroll" />
       <Navbar.Collapse id="navbarScroll">
         <Nav
@@ -14,8 +14,8 @@ const Header = () => (
           style={{ maxHeight: '100px' }}
           navbarScroll
         >
-          <Nav.Link href="#action1">Inicio</Nav.Link>
-          <Nav.Link href="#action2">Nuevo Pedido</Nav.Link>
+          <Nav.Link href="/">Inicio</Nav.Link>
+          <Nav.Link href="/nuevo_pedido_medico">Nuevo Pedido</Nav.Link>
           <NavDropdown title="Reporte" id="navbarScrollingDropdown">
             <NavDropdown.Item href="#action3">Semanal</NavDropdown.Item>
             <NavDropdown.Item href="#action4">Mensual</NavDropdown.Item>
