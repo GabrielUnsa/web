@@ -1,19 +1,12 @@
 
 import { useTheme } from '@mui/material/styles';
-
 import MobileStepper from '@mui/material/MobileStepper';
-import Paper from '@mui/material/Paper';
-import Typography from '@mui/material/Typography';
-import Button from '@mui/material/Button';
-import KeyboardArrowLeft from '@mui/icons-material/KeyboardArrowLeft';
-import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
-import Grid from '@mui/material/Grid';
 import { autoPlay } from 'react-swipeable-views-utils';
 import * as React from 'react';
-import CssBaseline from '@mui/material/CssBaseline';
 import Box from '@mui/material/Box';
 import Container from '@mui/material/Container';
+import './coursel.css';
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -45,22 +38,14 @@ function SwipeableTextMobileStepper() {
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
 
-  const handleNext = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep + 1);
-  };
-
-  const handleBack = () => {
-    setActiveStep((prevActiveStep) => prevActiveStep - 1);
-  };
-
   const handleStepChange = (step) => {
     setActiveStep(step);
   };
 
   return (
     <React.Fragment>
-    <Container fixed>
-      <Box sx={{ flexGrow: 1 }}>
+    <Container maxWidth="md">
+      <Box className="boxCoursel">
       <AutoPlaySwipeableViews
         axis={theme.direction === 'rtl' ? 'x-reverse' : 'x'}
         index={activeStep}
@@ -73,11 +58,9 @@ function SwipeableTextMobileStepper() {
               <Box
                 component="img"
                 sx={{
-                  height: 255,
-                  display: 'block',
+                  height: 400,
                   maxWidth: 400,
-                  overflow: 'hidden',
-                  width: '100%',
+                   
                 }}
                 src={step.imgPath}
                 alt={step.label}
