@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Header from './components/header/header';
 import CarouselGallery  from './components/carousel/carousel';
 import CardsDepartament from './components/cards/cards';
+import Footer from './components/footer/footer';
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Header />
       <CarouselGallery />
       <CardsDepartament /> 
+      < Footer/>
     </div>
   );
 }
