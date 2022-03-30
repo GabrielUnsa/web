@@ -5,6 +5,7 @@ import Header from './components/header/header';
 import CarouselGallery  from './components/carousel/carousel';
 import CardsDepartament from './components/cards/cards';
 import Footer from './components/footer/footer';
+import ServiceGrid from './components/services/serviceGrid';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Header />
       <CarouselGallery />
       <CardsDepartament /> 
+      <ServiceGrid />
       < Footer/>
     </div>
   );
