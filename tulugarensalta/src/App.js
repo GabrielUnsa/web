@@ -6,6 +6,7 @@ import CarouselGallery  from './components/carousel/carousel';
 import CardsDepartament from './components/cards/cards';
 import Footer from './components/footer/footer';
 import ServiceGrid from './components/services/serviceGrid';
+import GoogleApiWrapper from './components/maps/maprincipal';
 
 function App() {
   return (
@@ -14,6 +15,7 @@ function App() {
       <CarouselGallery />
       <CardsDepartament /> 
       <ServiceGrid />
+      <GoogleApiWrapper />
       < Footer/>
     </div>
   );
