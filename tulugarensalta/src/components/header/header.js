@@ -6,13 +6,15 @@ const Header = () => (
   <Navbar className="navBar" variant="dark">
     <Container>
     <Navbar.Brand href="#home">
-        <img
+      {/*  
+      <img
           alt=""
           src="/logo.svg"
           width="30"
           height="30"
           className="d-inline-block align-top"
         />{' '}
+      */}
         Tu lugar en Salta
     </Navbar.Brand>
     <Nav className="justify-content-end">

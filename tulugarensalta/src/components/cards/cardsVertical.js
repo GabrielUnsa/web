@@ -1,4 +1,4 @@
-import { Card, Row, Col, Container, Button, ButtonToolbar } from "react-bootstrap";
+import { Card, Row, Col, Container, Button } from "react-bootstrap";
 import imgP1 from '../../assets/img/portada/8A_P.jpg';
 import imgP2 from '../../assets/img/portada/A2A_P.jpg';
 import imgP3 from '../../assets/img/portada/A3D_P.jpg';
@@ -23,28 +23,30 @@ const images = [
   },
 ];
 
-const CardsDepartament = () => (
+const CardsDepartamentVertical = () => (
  <Container> 
-<h1 class="display-4">Departamentos</h1>
-<Row xs={1} md={4}>
-  {images.map((step) => (
-    <Col>
-      <Card>
+  {images.map(step => (
+  <div>
+    <Card>
+    <Row className='no-gutters'>
+      <Col md={4} lg={4}  >
         <Card.Img variant="top" src={step.imgPath} />
+      </Col>
+      <Col>
         <Card.Body>
-          <Card.Title>Card title</Card.Title>
+          <Card.Title>Card Title</Card.Title>
           <Card.Text>
-            This is a longer card with supporting text below as a natural
-            lead-in to additional content. This content is a little bit longer.
+            Some quick example text to build on the card title and make up the bulk of
+            the card's content.
           </Card.Text>
-          <Button variant="outline-dark"> Mas Información</Button>
+          <Button variant="primary">Go somewhere</Button>
         </Card.Body>
-      </Card>
-    </Col>
+      </Col>
+      </Row>
+    </Card>
+    <br />
+  </div>
   ))}
-</Row>
-<br />
-
-</Container>
-   );
-export default CardsDepartament;
+  <br />
+</Container> );
+export default CardsDepartamentVertical;
