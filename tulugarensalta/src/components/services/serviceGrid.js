@@ -6,6 +6,7 @@ import { FiTv } from 'react-icons/fi';
 import { MdKitchen, MdOutlineLocalLaundryService, MdLocationCity } from 'react-icons/md';
 
 const ServiceGrid  = () => (
+<div id="servicios"> 
   <Container>
     <h1 class="display-4"> Servicios </h1>
     <br />
@@ -45,6 +46,6 @@ const ServiceGrid  = () => (
       </Col>
     </Row>
   </Container>
+</div>
 );
-
 export default ServiceGrid;

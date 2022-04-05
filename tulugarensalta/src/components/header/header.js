@@ -3,7 +3,7 @@ import './header.css';
 
 const Header = () => (
 <header>
-  <Navbar className="navBar" variant="dark">
+  <Navbar fixed="top" className="navBar" variant="dark">
     <Container>
     <Navbar.Brand href="#home">
       {/*  
@@ -18,11 +18,11 @@ const Header = () => (
         Tu lugar en Salta
     </Navbar.Brand>
     <Nav className="justify-content-end">
-      <Nav.Link href="#home">Inicio</Nav.Link>
-      <Nav.Link href="#features">Departamentos</Nav.Link>
-      <Nav.Link href="#pricing">Servicios</Nav.Link>
-      <Nav.Link href="#place">Ubicacion</Nav.Link>
-      <Nav.Link href="#contact">Contactos</Nav.Link>
+      <Nav.Link href="#home">Inicio</Nav.Link> 
+      <Nav.Link href="#departamentos">Departamentos</Nav.Link>
+      <Nav.Link href="#servicios">Servicios</Nav.Link>
+      <Nav.Link href="#ubicacion">Ubicacion</Nav.Link>
+      <Nav.Link href="#contactos">Contactos</Nav.Link>
     </Nav>
     </Container>
   </Navbar>
