@@ -3,6 +3,8 @@ import { Row, Col, Form, FloatingLabel, Button } from 'react-bootstrap';
 export default function FormContact(){
   return(
     <Form>
+      <h3> Envianos un Mensaje </h3>
+      <br />
       <Row className="g-2">
         <Col md>
           <FloatingLabel
@@ -31,7 +33,6 @@ export default function FormContact(){
       >
         <Form.Control type="email" placeholder="Consulta de Disponibilidad" />
       </FloatingLabel>
-
       <FloatingLabel controlId="floatingTextarea2" label="Consulta">
         <Form.Control
           as="textarea"
@@ -40,11 +41,9 @@ export default function FormContact(){
         />
       </FloatingLabel>
       <br />
-      <Row md={2} className="justify-content-center"> 
-        <Button variant="primary" type="submit">
-          Enviar
+        <Button variant="primary" type="submit" className="d-flex">
+         Enviar
         </Button>
-      </Row>
     </Form>
   );
 }

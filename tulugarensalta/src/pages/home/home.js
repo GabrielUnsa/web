@@ -1,6 +1,6 @@
 import Header from '../../components/header/header';
 import CarouselGallery from '../../components/carousel/carousel';
-import CardsDepartament from '../../components/cards/cards';
+import CardsDepartament from '../../components/department/department';
 import ServiceGrid from '../../components/services/serviceGrid';
 import Contacts from '../../components/contacts/contacts';
 

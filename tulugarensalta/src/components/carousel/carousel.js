@@ -48,6 +48,7 @@ const images = [
 const CarouselGallery = () => (
 <div>
   <br />
+  <br />
   <Carousel>
     { images.map((step) => (
     <Carousel.Item>
@@ -66,7 +67,6 @@ const CarouselGallery = () => (
     ))}
   </Carousel>
   <br />
-  
 </div>
 );
 export default CarouselGallery;

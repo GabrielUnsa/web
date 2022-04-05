@@ -7,10 +7,12 @@ import { MdKitchen, MdOutlineLocalLaundryService, MdLocationCity } from 'react-i
 
 const ServiceGrid  = () => (
 <div id="servicios"> 
+  <br />
+  <br />
   <Container>
     <h1 class="display-4"> Servicios </h1>
     <br />
-    <Row className="justify-content-start">
+    <Row md="auto" className="justify-content-between">
       <Col >
         <h2> <TiWiFi /> WiFi </h2>
       </Col>
@@ -22,7 +24,7 @@ const ServiceGrid  = () => (
       </Col>
     </Row>
     <br />
-    <Row className="justify-content">
+    <Row md="auto" className="justify-content-between">
       <Col>
         <h2> <FiTv /> Tv </h2>
       </Col>
@@ -34,7 +36,7 @@ const ServiceGrid  = () => (
       </Col>
     </Row>
     <br />
-    <Row className="justify-content">
+    <Row md="auto" className="justify-content-between">
       <Col>
         <h2> <FaRegSnowflake /> Aire Acondicionado </h2>
       </Col>
@@ -46,6 +48,7 @@ const ServiceGrid  = () => (
       </Col>
     </Row>
   </Container>
+  <br />
 </div>
 );
 export default ServiceGrid;

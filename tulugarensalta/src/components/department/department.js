@@ -25,8 +25,11 @@ const images = [
 
 const CardsDepartament = () => (
 <div id="departamentos">
+  <br />
+  <br />
   <Container> 
     <h1 class="display-4">Departamentos</h1>
+    <br />
       <Row xs={1} md={4}>
         {images.map((step) => (
           <Col>
@@ -46,6 +49,7 @@ const CardsDepartament = () => (
       </Row>
     <br />
   </Container>
+  <br />
 </div>
 );
 export default CardsDepartament;
