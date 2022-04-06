@@ -1,14 +1,26 @@
-import { Row, Col, Form, FloatingLabel, Button } from 'react-bootstrap';
-import emailjs from 'eamiljs-com';
+import { Row, Col, Form, FloatingLabel, Button, Alert } from 'react-bootstrap';
+import emailjs from '@emailjs/browser';
+import { useRef } from 'react';
+import Example from './alerts/sucessAlert';
 
 export default function FormContact(){
-  function sendEmail(e){
+
+  const form = useRef();
+
+  const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_oqsdh7t','template_yzwzhx4',e.target,'KTC9fGDgw5scUYgrl').then();
-  }
+
+    emailjs.sendForm('service_oqsdh7t', 'template_yzwzhx4', form.current, 'KTC9fGDgw5scUYgrl')
+      .then((result) => {
+        <Example />
+      }, (error) => {
+        <Alert variant="warning">
+        </Alert>
+      });
+  };
 
   return(
-    <Form onSubmit={sendEmail}>
+    <Form ref={form} onSubmit={sendEmail}>
       <h3> Envianos un Mensaje </h3>
       <br />
       <Row className="g-2">
@@ -18,7 +30,7 @@ export default function FormContact(){
             label="Nombre"
             className="mb-3"
           >
-            <Form.Control type="Nombre" placeholder="Juan Perez" />
+            <Form.Control type="text" name="user_name" placeholder="Juan Perez" />
           </FloatingLabel>
         </Col>
         <Col md>
@@ -27,7 +39,7 @@ export default function FormContact(){
             label="Email"
             className="mb-3"
           >
-            <Form.Control type="email" placeholder="email@example.com" />
+            <Form.Control type="email" name="user_email" placeholder="email@example.com" />
           </FloatingLabel>
 
         </Col>
@@ -37,11 +49,12 @@ export default function FormContact(){
         label="Asunto"
         className="mb-3"
       >
-        <Form.Control type="email" placeholder="Consulta de Disponibilidad" />
+        <Form.Control type="text" name="user_subject" placeholder="Consulta de Disponibilidad" />
       </FloatingLabel>
       <FloatingLabel controlId="floatingTextarea2" label="Consulta">
         <Form.Control
           as="textarea"
+          name="message"
           placeholder="Deje su consulta aqui"
           style={{ height: '100px' }}
         />
