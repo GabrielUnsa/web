@@ -2,6 +2,7 @@ import { Row, Col, Form, FloatingLabel, Button, Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import { useRef } from 'react';
 import Example from './alerts/sucessAlert';
+import './contacts.css';
 
 export default function FormContact(){
 
@@ -41,7 +42,6 @@ export default function FormContact(){
           >
             <Form.Control type="email" name="user_email" placeholder="email@example.com" />
           </FloatingLabel>
-
         </Col>
       </Row>
       <FloatingLabel
@@ -60,9 +60,9 @@ export default function FormContact(){
         />
       </FloatingLabel>
       <br />
-        <Button variant="primary" type="submit" className="d-flex">
-         Enviar
-        </Button>
+      <Button  className="container-fluid" variant="primary" size="lg" type="submit">
+        Enviar
+      </Button>
     </Form>
   );
 }
