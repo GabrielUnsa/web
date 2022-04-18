@@ -1,23 +1,20 @@
-import { Row, Col, Form, FloatingLabel, Button, Alert } from 'react-bootstrap';
+import { Row, Col, Form, FloatingLabel, Button } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
-import { useRef } from 'react';
-import Example from './alerts/sucessAlert';
+import { useRef, useState } from 'react';
+import SuccessAlert from './sweetalerts/SuccessSwAl';
 import './contacts.css';
 
-export default function FormContact(){
+export default function FormContact( props ){
 
   const form = useRef();
-
+  const [ submitted, setSubmitted ] = useState(false);
   const sendEmail = (e) => {
     e.preventDefault();
-
     emailjs.sendForm('service_oqsdh7t', 'template_yzwzhx4', form.current, 'KTC9fGDgw5scUYgrl')
       .then((result) => {
-        <Example />
-      }, (error) => {
-        <Alert variant="warning">
-        </Alert>
+        setSubmitted(true);
       });
+    submitted && <SuccessAlert />;
   };
 
   return(
