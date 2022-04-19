@@ -13,7 +13,7 @@ const ServiceGrid  = () => (
 <div id="servicios"> 
   <br />
   <br />
-  <h1 class="display-4"> Servicios </h1>
+  <h1 className="display-4"> Servicios </h1>
   <Container >
     <br />
     <Row className="leftText">

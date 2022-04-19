@@ -6,7 +6,7 @@ const Footer = () => {
     <footer>
       <Card.Footer className="text-center">
         <br />
-        <p class="h5">
+        <p className="h5">
           Copyright © 2022
         </p>
         <br />

@@ -6,19 +6,19 @@ import imgP4 from '../../assets/img/portada/G5D_P.jpg';
 
 const images = [
   {
-    imgPath: imgP1,
+    img: imgP1,
     label: '8A_P',
   },
   {
-    imgPath: imgP2,
+    img: imgP2,
     label: 'A2A_P',
   },
   {
-    imgPath: imgP3,
+    img: imgP3,
     label: 'A3D_P',
   },
   {
-    imgPath: imgP4,
+    img: imgP4,
     label: 'G5D_P',
   },
 ];
@@ -28,13 +28,13 @@ const CardsDepartament = () => (
   <br />
   <br />
   <Container> 
-    <h1 class="display-4">Departamentos</h1>
+    <h1 className="display-4">Departamentos</h1>
     <br />
       <Row xs={1} md={4}>
         {images.map((step) => (
-          <Col>
+          <Col key={ step.label }>
             <Card>
-              <Card.Img variant="top" src={step.imgPath} />
+              <Card.Img variant="top" src={step.img} />
               <Card.Body>
                 <Card.Title>Card title</Card.Title>
                 <Card.Text>

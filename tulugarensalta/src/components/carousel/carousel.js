@@ -12,35 +12,35 @@ import './carousel.css';
 const images = [
   {
     label: '8A_1',
-    imgPath: imgC1,
+    img: imgC1,
   },
   {
     label: '8A_2',
-    imgPath: imgC2,
+    img: imgC2,
   },
   {
     label: 'Alvarado2A_1',
-    imgPath: imgC3,
+    img: imgC3,
   },
   {
     label: 'Alvarado2A_2',
-    imgPath: imgC4,
+    img: imgC4,
   },
   {
     label: 'Alvarado3A_1',
-    imgPath: imgC5,
+    img: imgC5,
   },
   {
     label: 'Alvarado3A_2',
-    imgPath: imgC6,
+    img: imgC6,
   },
   {
     label: 'Gorriti5D_1',
-    imgPath: imgC7,
+    img: imgC7,
   },
   {
     label: 'Gorriti5D_2',
-    imgPath: imgC8,
+    img: imgC8,
   },
 ];
 
@@ -51,10 +51,10 @@ const CarouselGallery = () => (
   <br />
   <Carousel>
     { images.map((step) => (
-    <Carousel.Item>
+    <Carousel.Item key={step.img}>
       <img
         className="flex"
-        src={step.imgPath}
+        src={step.img}
         alt="First slide"
         width='60%'
         height='400'

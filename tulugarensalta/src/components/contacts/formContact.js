@@ -2,6 +2,7 @@ import { Row, Col, Form, FloatingLabel, Button } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import SuccessAlert from './sweetalerts/SuccessSwAl';
+import WarningAlert from './sweetalerts/WarningSwAl';
 import './contacts.css';
 
 export default function FormContact( props ){
@@ -14,7 +15,6 @@ export default function FormContact( props ){
       .then((result) => {
         setSubmitted(true);
       });
-    submitted && <SuccessAlert />;
   };
 
   return(
