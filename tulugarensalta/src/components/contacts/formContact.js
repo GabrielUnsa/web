@@ -1,20 +1,37 @@
-import { Row, Col, Form, FloatingLabel, Button } from 'react-bootstrap';
+import { Row, Col, Form, FloatingLabel, Button, Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
 import SuccessAlert from './sweetalerts/SuccessSwAl';
 import WarningAlert from './sweetalerts/WarningSwAl';
+import ReCAPTCHA from 'react-google-recaptcha';
 import './contacts.css';
 
 export default function FormContact( props ){
 
   const form = useRef();
-  const [ submitted, setSubmitted ] = useState(false);
+  const captcha = useRef(null);
+
+  const [status, setStatus] = useState(undefined);
+  const [valueCaptcha, setValueCaptcha] = useState(undefined);
+
+  const onChange = () =>{
+    if( captcha.current.getValue() ){
+      setValueCaptcha(true);
+    }
+  }
+
   const sendEmail = (e) => {
     e.preventDefault();
-    emailjs.sendForm('service_oqsdh7t', 'template_yzwzhx4', form.current, 'KTC9fGDgw5scUYgrl')
-      .then((result) => {
-        setSubmitted(true);
-      });
+    if ( captcha.current.getValue() ){
+      emailjs.sendForm('service_oqsdh7t', 'template_yzwzhx4', form.current, 'KTC9fGDgw5scUYgrl')
+        .then((result) => {
+          setStatus({ type: 'success' });
+        }, (error) => {
+          setStatus({ type: 'error', error });
+        });
+    }else{
+      setValueCaptcha(false);
+    }
   };
 
   return(
@@ -28,7 +45,7 @@ export default function FormContact( props ){
             label="Nombre"
             className="mb-3"
           >
-            <Form.Control type="text" name="user_name" placeholder="Juan Perez" />
+            <Form.Control required type="text" name="user_name" placeholder="Juan Perez" />
           </FloatingLabel>
         </Col>
         <Col md>
@@ -37,7 +54,7 @@ export default function FormContact( props ){
             label="Email"
             className="mb-3"
           >
-            <Form.Control type="email" name="user_email" placeholder="email@example.com" />
+            <Form.Control required type="email" name="user_email" placeholder="email@example.com" />
           </FloatingLabel>
         </Col>
       </Row>
@@ -54,12 +71,22 @@ export default function FormContact( props ){
           name="message"
           placeholder="Deje su consulta aqui"
           style={{ height: '100px' }}
+          required
         />
       </FloatingLabel>
       <br />
+        < ReCAPTCHA
+            ref={captcha}
+            sitekey="6LeXaIcfAAAAAFmWB0nIBrFvmu6t83uZMLpFdvI9"
+            onCharge={onChange}
+          />
+      <br />
+      { valueCaptcha === false && (<Alert variant="warning"> Debe aceptar el captcha </Alert>) }
       <Button  className="container-fluid" variant="primary" size="lg" type="submit">
         Enviar
       </Button>
+      { status?.type === 'success' && <SuccessAlert/> }
+      { status?.type === 'error' && <WarningAlert/> }
     </Form>
   );
 }
