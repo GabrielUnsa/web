@@ -1,17 +1,15 @@
 import { Row, Col, Form, FloatingLabel, Button, Alert } from 'react-bootstrap';
 import emailjs from '@emailjs/browser';
 import { useRef, useState } from 'react';
-import SuccessAlert from './sweetalerts/SuccessSwAl';
-import WarningAlert from './sweetalerts/WarningSwAl';
 import ReCAPTCHA from 'react-google-recaptcha';
 import './contacts.css';
+import swal from 'sweetalert';
 
 export default function FormContact( props ){
 
   const form = useRef();
   const captcha = useRef(null);
 
-  const [status, setStatus] = useState(undefined);
   const [valueCaptcha, setValueCaptcha] = useState(undefined);
 
   const onChange = () =>{
@@ -25,9 +23,10 @@ export default function FormContact( props ){
     if ( captcha.current.getValue() ){
       emailjs.sendForm('service_oqsdh7t', 'template_yzwzhx4', form.current, 'KTC9fGDgw5scUYgrl')
         .then((result) => {
-          setStatus({ type: 'success' });
+          swal("Consulta Enviada!", "Gracias por enviar su consulta!", "success");
+          e.target.reset();
         }, (error) => {
-          setStatus({ type: 'error', error });
+          swal("Su Consulta no pudo ser enviada!", "Lamentablemente su consulta no fue enviada, por favor intente mas tarde", "warning");
         });
     }else{
       setValueCaptcha(false);
@@ -79,14 +78,15 @@ export default function FormContact( props ){
             ref={captcha}
             sitekey="6LeXaIcfAAAAAFmWB0nIBrFvmu6t83uZMLpFdvI9"
             onCharge={onChange}
-          />
+            className="captchaCss"
+        />
+      <br />
       <br />
       { valueCaptcha === false && (<Alert variant="warning"> Debe aceptar el captcha </Alert>) }
       <Button  className="container-fluid" variant="primary" size="lg" type="submit">
         Enviar
       </Button>
-      { status?.type === 'success' && <SuccessAlert/> }
-      { status?.type === 'error' && <WarningAlert/> }
+      <br />
     </Form>
   );
 }

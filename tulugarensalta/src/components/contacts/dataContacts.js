@@ -9,8 +9,8 @@ export default function DataContact(){
     <Container>
       <h3> Contactanos </h3>
       <br />
-      <br />
-      
+      <br />     
+      <br /> 
       <Row md="auto" className="justify-content-start">
         <a href="https://api.whatsapp.com/send?phone=+543874049071" target="_blank" rel="noopener noreferrer" className="link-dark"> <h3> <BsWhatsapp /> {' '} +54 3874049071 </h3></a>
       </Row>
