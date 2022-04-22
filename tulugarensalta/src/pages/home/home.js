@@ -3,6 +3,7 @@ import CarouselGallery from '../../components/carousel/carousel';
 import CardsDepartament from '../../components/department/department';
 import ServiceGrid from '../../components/services/serviceGrid';
 import Contacts from '../../components/contacts/contacts';
+import Maps from '../../components/maps/maps';
 
 export default function Home(){
   return(
@@ -14,6 +15,7 @@ export default function Home(){
       <CarouselGallery />
       <CardsDepartament />
       <ServiceGrid />
+      <Maps />
       <Contacts />
     </div>
   );
