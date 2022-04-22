@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import { Modal, Button } from 'react-bootstrap';
+import { Modal, Button, Figure } from 'react-bootstrap';
 
 const Modal2A = () => {
   const [show, setShow] = useState(false);
@@ -31,6 +31,28 @@ const Modal2A = () => {
             reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
             deleniti rem!
           </p>
+          <Figure>
+  <Figure.Image
+    width={171}
+    height={180}
+    alt="171x180"
+    src="holder.js/171x180"
+  />
+  <Figure.Caption>
+    Nulla vitae elit libero, a pharetra augue mollis interdum.
+  </Figure.Caption>
+</Figure>
+          <Figure>
+  <Figure.Image
+    width={171}
+    height={180}
+    alt="171x180"
+    src="holder.js/171x180"
+  />
+  <Figure.Caption>
+    Nulla vitae elit libero, a pharetra augue mollis interdum.
+  </Figure.Caption>
+</Figure>
         </Modal.Body>
       </Modal>
     </>
