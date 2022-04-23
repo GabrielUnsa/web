@@ -15,7 +15,7 @@ class Maps extends Component {
       lat: -24.790334,
       lng: -65.419584
     },
-    zoom: 45
+    zoom: 16
   };
 
   render() {
