@@ -36,7 +36,7 @@ const ServiceGrid  = () => (
     <br />
     <Row className="leftText">
       <Col> <h2> <FiTv /> TV </h2> </Col>
-      <Col> <h2> <GiElevator /> Acensor </h2> </Col>
+      <Col> <h2> <GiElevator /> Portero 24 Hs </h2> </Col>
       <Col> <h2> <MdLocationCity /> Ubicacion Centrica </h2> </Col>
     </Row>
   </Container>

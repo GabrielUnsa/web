@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import { FaSearchPlus } from 'react-icons/fa';
 
 const Modal3A = () => {
   const [show, setShow] = useState(false);
@@ -7,9 +8,8 @@ const Modal3A = () => {
   return (
     <>
       <Button variant="primary" onClick={() => setShow(true)}>
-        Custom Width Modal
-      </Button>
-
+        Mas Información {' '} <FaSearchPlus size={20}/> 
+      </Button>      
       <Modal
         show={show}
         onHide={() => setShow(false)}
@@ -17,9 +17,7 @@ const Modal3A = () => {
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title">
-            Custom Modal Styling
-          </Modal.Title>
+          <Modal.Title id="example-custom-modal-styling-title"> Monoambiente Alvarado 3A </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>

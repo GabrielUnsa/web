@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import { FaSearchPlus } from 'react-icons/fa';
 
 const Modal5G = () => {
   const [show, setShow] = useState(false);
@@ -7,9 +8,8 @@ const Modal5G = () => {
   return (
     <>
       <Button variant="primary" onClick={() => setShow(true)}>
-        Custom Width Modal
+        Mas Información {' '} <FaSearchPlus size={20}/> 
       </Button>
-
       <Modal
         show={show}
         onHide={() => setShow(false)}
@@ -17,9 +17,7 @@ const Modal5G = () => {
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title">
-            Custom Modal Styling
-          </Modal.Title>
+          <Modal.Title id="example-custom-modal-styling-title"> Monoambiente Gorriti 5D </Modal.Title>
         </Modal.Header>
         <Modal.Body>
           <p>

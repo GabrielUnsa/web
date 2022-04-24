@@ -12,29 +12,29 @@ const departments = [
   {
     img: imgP1,
     label: '8A_P',
-    title: '8A',
-    description: 'This is a longer card with supporting text below as a natural, lead-in to additional content. This content is a little bit longer.',
+    title: 'Alvarado al 1400 - 8A',
+    description: 'Monoambiente espacioso ideal para 4 a 6 personas. \n Cuenta con balcon vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama"',
     modal: <Modal8A/>,
   },
   {
     img: imgP2,
     label: 'A2A_P',
-    title: 'A2',
-    description: 'This is a longer card with supporting text below as a natural, lead-in to additional content. This content is a little bit longer.',
+    title: 'Alvarado al 1400 - A2',
+    description: 'Monoambiente espacioso ideal para 4 a 5 personas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama"',    
     modal: <Modal2A/>,
   },
   {
     img: imgP3,
     label: 'A3D_P',
-    title: 'A3',
-    description: 'This is a longer card with supporting text below as a natural, lead-in to additional content. This content is a little bit longer.',
+    title: 'Alvarado al 1400 - A3',
+    description: 'Monoambiente espacioso ideal para 2 a 4 personas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama"',
     modal: <Modal3A/>
   },
   {
     img: imgP4,
     label: 'G5D_P',
-    title: 'G5',
-    description: 'This is a longer card with supporting text below as a natural, lead-in to additional content. This content is a little bit longer.',
+    title: 'Gorriti al 90 - G5',
+    description: 'Monoambiente espacioso ideal para 2 a 4 personas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama"',
     modal: <Modal5G/>,
   },
 ];

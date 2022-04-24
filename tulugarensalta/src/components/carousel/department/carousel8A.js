@@ -9,7 +9,7 @@ import { Carousel, Container } from 'react-bootstrap';
 
 const images = [
   {
-    label: 'Cama Cucheta',
+    label: 'Somier 1 Plaza',
     img:bedroom8A,
   },
   {
@@ -17,7 +17,7 @@ const images = [
     img: bedroom8A_2,
   },
   {
-    label:'Cocina Lavador',
+    label:'Lavador',
     img: kitchen8A,
   },
   {
