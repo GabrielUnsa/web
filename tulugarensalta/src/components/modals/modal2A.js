@@ -1,5 +1,7 @@
 import { useState } from 'react';
-import { Modal, Button, Figure } from 'react-bootstrap';
+import { Modal, Button } from 'react-bootstrap';
+import Carousel8A from '../carousel/department/data';
+
 
 const Modal2A = () => {
   const [show, setShow] = useState(false);
@@ -13,46 +15,14 @@ const Modal2A = () => {
       <Modal
         show={show}
         onHide={() => setShow(false)}
-        dialogClassName="modal-90w"
+        size="xl"
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title">
-            Custom Modal Styling
-          </Modal.Title>
+          <Modal.Title> Monoambiente Alvarado 8A </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <p>
-            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-            ipsam atque a dolores quisquam quisquam adipisci possimus
-            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-            deleniti rem!
-          </p>
-          <Figure>
-  <Figure.Image
-    width={171}
-    height={180}
-    alt="171x180"
-    src="holder.js/171x180"
-  />
-  <Figure.Caption>
-    Nulla vitae elit libero, a pharetra augue mollis interdum.
-  </Figure.Caption>
-</Figure>
-          <Figure>
-  <Figure.Image
-    width={171}
-    height={180}
-    alt="171x180"
-    src="holder.js/171x180"
-  />
-  <Figure.Caption>
-    Nulla vitae elit libero, a pharetra augue mollis interdum.
-  </Figure.Caption>
-</Figure>
+        <Modal.Body closeButton>
+          <Carousel8A />
         </Modal.Body>
       </Modal>
     </>
