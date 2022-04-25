@@ -11,35 +11,35 @@ import './carousel.css';
 
 const images = [
   {
-    label: '8A_1',
+    label: 'Alvarado al 1400 - 8A',
     img: imgC1,
   },
   {
-    label: '8A_2',
+    label: 'Alvarado al 1400 - 8A',
     img: imgC2,
   },
   {
-    label: 'Alvarado2A_1',
+    label: 'Alvarado al 1400 - 2A',
     img: imgC3,
   },
   {
-    label: 'Alvarado2A_2',
+    label: 'Alvarado al 1400 - 2A',
     img: imgC4,
   },
   {
-    label: 'Alvarado3A_1',
+    label: 'Alvarado al 1400 - 3A',
     img: imgC5,
   },
   {
-    label: 'Alvarado3A_2',
+    label: 'Alvarado al 1400 - 3A',
     img: imgC6,
   },
   {
-    label: 'Gorriti5D_1',
+    label: 'Gorriti al 90 - 5D',
     img: imgC7,
   },
   {
-    label: 'Gorriti5D_2',
+    label: 'Gorriti al 90 - 5D',
     img: imgC8,
   },
 ];
@@ -60,8 +60,7 @@ const CarouselGallery = () => (
         height='400'
       />
       <Carousel.Caption>
-        <h5>First slide label</h5>
-        <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        <h4> {step.label} </h4>
       </Carousel.Caption>
     </Carousel.Item>
     ))}

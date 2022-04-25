@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
 import Carousel8A from '../carousel/department/carousel8A';
 import { FaSearchPlus } from 'react-icons/fa';
+import Services8A from './tServices/tServices8A';
 
 const Modal8A = () => {
   const [show, setShow] = useState(false);
@@ -22,6 +23,7 @@ const Modal8A = () => {
         </Modal.Header>
         <Modal.Body closeButton>
           <Carousel8A />
+          <Services8A />
         </Modal.Body>
       </Modal>
     </>

@@ -10,32 +10,39 @@ import imgP4 from '../../assets/img/portada/G5D_P.jpg';
 
 const departments = [
   {
-    img: imgP1,
-    label: '8A_P',
-    title: 'Alvarado al 1400 - 8A',
-    description: 'Monoambiente espacioso ideal para 4 a 6 personas. \n Cuenta con Balcon. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
-    modal: <Modal8A/>,
-  },
-  {
-    img: imgP2,
-    label: 'A2A_P',
-    title: 'Alvarado al 1400 - A2',
-    description: 'Monoambiente espacioso ideal para 4 a 5 personas. Vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',    
-    modal: <Modal2A/>,
-  },
-  {
-    img: imgP3,
-    label: 'A3D_P',
-    title: 'Alvarado al 1400 - A3',
+    img: imgP4,
+    label: 'G5D_P',
+    title: 'Gorriti 1',
     description: 'Monoambiente espacioso ideal para 2 a 4 personas. Vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
-    modal: <Modal3A/>
+    modal: <Modal5G/>,
   },
   {
     img: imgP4,
     label: 'G5D_P',
-    title: 'Gorriti al 90 - G5',
-    description: 'Monoambiente espacioso ideal para 2 a 4 personas. Vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
+    title: 'Gorriti 2',
+    description: 'Departamento con 1 dormitorio, ideal para 2 a 4 personas. Cuenta con balcon con vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
     modal: <Modal5G/>,
+  },
+  {
+    img: imgP1,
+    label: '8A_P',
+    title: 'Gorrit 3',
+    description: 'Departamento 2 dormitorios y 2 baños privados, ideal para 4 a 6 personas. \n Cuenta con Balcon. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
+    modal: <Modal8A/>,
+  },
+  {
+    img: imgP3,
+    label: 'A3D_P',
+    title: 'Alvarado 1',
+    description: 'Departamento con 1 dormitorio ideal para 2 a 4 personas. Vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
+    modal: <Modal3A/>
+  },
+  {
+    img: imgP2,
+    label: 'A2A_P',
+    title: 'Alvarado 2',
+    description: 'Departamento con 2 dormitorios ideal para 4 a 5 personas. Vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',    
+    modal: <Modal2A/>,
   },
 ];
 

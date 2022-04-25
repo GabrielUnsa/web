@@ -38,7 +38,7 @@ const images = [
   }, 
 ]
 
-const Carousel8A = () => (
+const Carousel2A = () => (
 <Container> 
   <Carousel>
     { images.map((step) => (
@@ -58,4 +58,4 @@ const Carousel8A = () => (
   </Carousel>
 </Container>
   );
-export default Carousel8A;
+export default Carousel2A;

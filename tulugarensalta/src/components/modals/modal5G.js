@@ -1,6 +1,8 @@
 import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
+import Carousel3A from '../carousel/department/carousel3A';
 import { FaSearchPlus } from 'react-icons/fa';
+import Services5D3A from './tServices/tServices5D3A';
 
 const Modal5G = () => {
   const [show, setShow] = useState(false);
@@ -13,22 +15,15 @@ const Modal5G = () => {
       <Modal
         show={show}
         onHide={() => setShow(false)}
-        dialogClassName="modal-90w"
+        size="xl"
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title"> Monoambiente Gorriti 5D </Modal.Title>
+          <Modal.Title id="example-custom-modal-styling-title"> Monoambiente Alvarado 3A </Modal.Title>
         </Modal.Header>
-        <Modal.Body>
-          <p>
-            Ipsum molestiae natus adipisci modi eligendi? Debitis amet quae unde
-            commodi aspernatur enim, consectetur. Cumque deleniti temporibus
-            ipsam atque a dolores quisquam quisquam adipisci possimus
-            laboriosam. Quibusdam facilis doloribus debitis! Sit quasi quod
-            accusamus eos quod. Ab quos consequuntur eaque quo rem! Mollitia
-            reiciendis porro quo magni incidunt dolore amet atque facilis ipsum
-            deleniti rem!
-          </p>
+        <Modal.Body closeButton>
+          <Carousel3A />
+          <Services5D3A />
         </Modal.Body>
       </Modal>
     </>
