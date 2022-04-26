@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import { Modal, Button } from 'react-bootstrap';
-import Carousel3A from '../carousel/department/carousel3A';
+import Carousel5D from '../carousel/department/carousel5D';
 import { FaSearchPlus } from 'react-icons/fa';
 import Services5D3A from './tServices/tServices5D3A';
 
@@ -19,10 +19,10 @@ const Modal5G = () => {
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title"> Monoambiente Alvarado 3A </Modal.Title>
+          <Modal.Title id="example-custom-modal-styling-title"> Monoambiente Gorriti 1 </Modal.Title>
         </Modal.Header>
         <Modal.Body closeButton>
-          <Carousel3A />
+          <Carousel5D />
           <Services5D3A />
         </Modal.Body>
       </Modal>

@@ -1,4 +1,3 @@
-import Edificio from '../../../assets/img/departamentos/ALVARADO 2A/Edificio.jpg';
 import Sala from '../../../assets/img/departamentos/ALVARADO 2A/Sala 1.jpg';
 import Sala_2 from '../../../assets/img/departamentos/ALVARADO 2A/Sala 2.jpg';
 import Dormitorio from '../../../assets/img/departamentos/ALVARADO 2A/Dormitorio 1.jpg';
@@ -12,10 +11,6 @@ import Baño_2 from '../../../assets/img/departamentos/ALVARADO 2A/Baño 2.jpg';
 import { Carousel, Container } from 'react-bootstrap';
 
 const images = [
-  {
-    label: 'Edificio',
-    img:Edificio,
-  },
   {
     label: 'Living',
     img: Sala,

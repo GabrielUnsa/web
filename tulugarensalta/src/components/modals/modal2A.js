@@ -19,7 +19,7 @@ const Modal2A = () => {
         aria-labelledby="example-custom-modal-styling-title"
       >
         <Modal.Header closeButton>
-          <Modal.Title id="example-custom-modal-styling-title"> Monoambiente Alvarado 2A </Modal.Title>
+          <Modal.Title id="example-custom-modal-styling-title"> Departamento Alvarado 2 </Modal.Title>
         </Modal.Header>
         <Modal.Body closeButton>
           <Carousel2A />

@@ -3,17 +3,16 @@ import bedroom3A_2 from '../../../assets/img/departamentos/ALVARADO 3D/Dormitori
 import kitchen3A from '../../../assets/img/departamentos/ALVARADO 3D/Cocina 1.jpg';
 import kitchen3A_2 from '../../../assets/img/departamentos/ALVARADO 3D/Cocina 2.JPG';
 import livingroom3A from '../../../assets/img/departamentos/ALVARADO 3D/Sala.JPG';
-import livingroom3A_2 from '../../../assets/img/departamentos/ALVARADO 3D/Sala 2.JPG';
-import bathroom3A from '../../../assets/img/departamentos/ALVARADO 3D/Baño.JPG';
+import bathroom3A from '../../../assets/img/departamentos/ALVARADO 3D/Baño.jpg';
 import { Carousel, Container } from 'react-bootstrap';
 
 const images = [
   {
-    label: 'Somier 1 Plaza - Dormitorio 1',
+    label: 'Dormitorio Cama Matrimonial',
     img:bedroom3A,
   },
   {
-    label: 'Cama Matrimonial - Dormitorio 2',
+    label: 'Dormitorio Sommier 1 Plaza',
     img: bedroom3A_2,
   },
   {
@@ -27,10 +26,6 @@ const images = [
   {
     label: 'Sala Comedor',
     img: livingroom3A,
-  },
-  {
-    label: 'Sala Comedor',
-    img: livingroom3A_2,
   },
   {
     label: 'Baño',

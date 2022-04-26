@@ -1,4 +1,3 @@
-import Edificio from '../../../assets/img/departamentos/GORRITI 5D/Edificio.jpg';
 import Sala from '../../../assets/img/departamentos/GORRITI 5D/Sala 1.jpg';
 import Sala_2 from '../../../assets/img/departamentos/GORRITI 5D/Sala 2.jpg';
 import Dormitorio from '../../../assets/img/departamentos/GORRITI 5D/Dormitorio.JPG';
@@ -8,10 +7,6 @@ import Cocina_2 from '../../../assets/img/departamentos/GORRITI 5D/Cocina2.jpg';
 import { Carousel, Container } from 'react-bootstrap';
 
 const images = [
-  {
-    label: 'Edificio',
-    img:Edificio,
-  },
   {
     label: 'Living',
     img: Sala,

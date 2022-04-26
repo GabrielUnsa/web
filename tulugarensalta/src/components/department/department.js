@@ -28,7 +28,7 @@ const departmentsGorriti = [
   {
     img: imgP1,
     label: '8A_P',
-    title: 'Gorrit 3',
+    title: 'Gorriti 3',
     description: 'Departamento 2 dormitorios y 2 baños privados, ideal para 4 a 6 personas. \n Cuenta con Balcon. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
     modal: <Modal8A/>,
   },

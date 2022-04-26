@@ -11,44 +11,43 @@ import './carousel.css';
 
 const images = [
   {
-    label: 'Alvarado al 1400 - 8A',
-    img: imgC1,
-  },
-  {
-    label: 'Alvarado al 1400 - 8A',
-    img: imgC2,
-  },
-  {
-    label: 'Alvarado al 1400 - 2A',
-    img: imgC3,
-  },
-  {
-    label: 'Alvarado al 1400 - 2A',
-    img: imgC4,
-  },
-  {
-    label: 'Alvarado al 1400 - 3A',
-    img: imgC5,
-  },
-  {
-    label: 'Alvarado al 1400 - 3A',
-    img: imgC6,
-  },
-  {
-    label: 'Gorriti al 90 - 5D',
+    label: 'Gorriti 1',
     img: imgC7,
   },
   {
-    label: 'Gorriti al 90 - 5D',
+    label: 'Gorriti 1',
     img: imgC8,
+  },
+  {
+    label: 'Gorriti 3',
+    img: imgC1,
+  },
+  {
+    label: 'Gorriti 3',
+    img: imgC2,
+  },
+  {
+    label: 'Alvarado 1',
+    img: imgC5,
+  },
+  {
+    label: 'Alvarado 1',
+    img: imgC6,
+  },
+  {
+    label: 'Alvarado 2',
+    img: imgC3,
+  },
+  {
+    label: 'Alvarado 2',
+    img: imgC4,
   },
 ];
 
 
 const CarouselGallery = () => (
 <div>
-  <br />
-  <br />
+
   <Carousel>
     { images.map((step) => (
     <Carousel.Item key={step.img}>
@@ -56,8 +55,8 @@ const CarouselGallery = () => (
         className="flex"
         src={step.img}
         alt="First slide"
-        width='60%'
-        height='400'
+        width='55%'
+        height='680'
       />
       <Carousel.Caption>
         <h4> {step.label} </h4>
