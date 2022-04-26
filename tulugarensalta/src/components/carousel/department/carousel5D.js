@@ -1,44 +1,44 @@
-import bedroom3A from '../../../assets/img/departamentos/ALVARADO 3D/Dormitorio 1.jpg';
-import bedroom3A_2 from '../../../assets/img/departamentos/ALVARADO 3D/Dormitorio 2.JPG';
-import kitchen3A from '../../../assets/img/departamentos/ALVARADO 3D/Cocina 1.jpg';
-import kitchen3A_2 from '../../../assets/img/departamentos/ALVARADO 3D/Cocina 2.JPG';
-import livingroom3A from '../../../assets/img/departamentos/ALVARADO 3D/Sala.JPG';
-import livingroom3A_2 from '../../../assets/img/departamentos/ALVARADO 3D/Sala 2.JPG';
-import bathroom3A from '../../../assets/img/departamentos/ALVARADO 3D/Baño.JPG';
+import Edificio from '../../../assets/img/departamentos/GORRITI 5D/Edificio.jpg';
+import Sala from '../../../assets/img/departamentos/GORRITI 5D/Sala 1.jpg';
+import Sala_2 from '../../../assets/img/departamentos/GORRITI 5D/Sala 2.jpg';
+import Dormitorio from '../../../assets/img/departamentos/GORRITI 5D/Dormitorio.JPG';
+import Dormitorio_2 from '../../../assets/img/departamentos/GORRITI 5D/Dormitorio 2.jpg';
+import Cocina from '../../../assets/img/departamentos/GORRITI 5D/Cocina.JPG';
+import Cocina_2 from '../../../assets/img/departamentos/GORRITI 5D/Cocina2.jpg';
 import { Carousel, Container } from 'react-bootstrap';
 
 const images = [
   {
-    label: 'Somier 1 Plaza - Dormitorio 1',
-    img:bedroom3A,
+    label: 'Edificio',
+    img:Edificio,
   },
   {
-    label: 'Cama Matrimonial - Dormitorio 2',
-    img: bedroom3A_2,
+    label: 'Living',
+    img: Sala,
   },
   {
-    label:'Cocina',
-    img: kitchen3A,
+    label:'Living',
+    img: Sala_2,
+  },
+  {
+    label: 'Cama Matrimonial',
+    img: Dormitorio,
+  },
+  {
+    label: 'Cama Matrimonial',
+    img: Dormitorio_2,
   },
   {
     label: 'Cocina',
-    img: kitchen3A_2,
-  },
-  {
-    label: 'Sala Comedor',
-    img: livingroom3A,
-  },
-  {
-    label: 'Sala Comedor',
-    img: livingroom3A_2,
-  },
-  {
-    label: 'Baño',
-    img: bathroom3A,
+    img: Cocina,
   }, 
+  {
+    label: 'Cocina',
+    img: Cocina_2,
+  },
 ]
 
-const Carousel3A = () => (
+const Carousel5D = () => (
 <Container> 
   <Carousel>
     { images.map((step) => (
@@ -58,4 +58,4 @@ const Carousel3A = () => (
   </Carousel>
 </Container>
   );
-export default Carousel3A;
+export default Carousel5D;

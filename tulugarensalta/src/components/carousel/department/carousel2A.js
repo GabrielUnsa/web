@@ -1,41 +1,61 @@
-import bedroom8A from '../../../assets/img/departamentos/8A/Dormitorio 1.jpg';
-import bedroom8A_2 from '../../../assets/img/departamentos/8A/Dormitorio 2.jpg';
-import kitchen8A from '../../../assets/img/departamentos/8A/Cocina Lavador.jpg';
-import kitchen8A_2 from '../../../assets/img/departamentos/8A/Cocina.jpg';
-import diningroom8A from '../../../assets/img/departamentos/8A/Comedor.jpg';
-import livingroom8A from '../../../assets/img/departamentos/8A/Sala de Estar.jpg';
-import bathroom8A from '../../../assets/img/departamentos/8A/Baño.jpg';
+import Edificio from '../../../assets/img/departamentos/ALVARADO 2A/Edificio.jpg';
+import Sala from '../../../assets/img/departamentos/ALVARADO 2A/Sala 1.jpg';
+import Sala_2 from '../../../assets/img/departamentos/ALVARADO 2A/Sala 2.jpg';
+import Dormitorio from '../../../assets/img/departamentos/ALVARADO 2A/Dormitorio 1.jpg';
+import Dormitorio_2 from '../../../assets/img/departamentos/ALVARADO 2A/Dormitorio 2.jpg';
+import Dormitorio_3 from '../../../assets/img/departamentos/ALVARADO 2A/Dormitorio 3.jpg';
+import Cocina from '../../../assets/img/departamentos/ALVARADO 2A/Cocina 1.JPG';
+import Cocina_2 from '../../../assets/img/departamentos/ALVARADO 2A/Cocina 2.jpg';
+import Cocina_3 from '../../../assets/img/departamentos/ALVARADO 2A/Cocina 3.jpg';
+import Baño from '../../../assets/img/departamentos/ALVARADO 2A/Baño 1.jpg';
+import Baño_2 from '../../../assets/img/departamentos/ALVARADO 2A/Baño 2.jpg';
 import { Carousel, Container } from 'react-bootstrap';
 
 const images = [
   {
-    label: 'Somier 1 Plaza',
-    img:bedroom8A,
-  },
-  {
-    label: 'Cama Matrimonial',
-    img: bedroom8A_2,
-  },
-  {
-    label:'Lavador',
-    img: kitchen8A,
-  },
-  {
-    label: 'Cocina',
-    img: kitchen8A_2,
-  },
-  {
-    label: 'Comedor',
-    img: diningroom8A,
+    label: 'Edificio',
+    img:Edificio,
   },
   {
     label: 'Living',
-    img: livingroom8A,
+    img: Sala,
+  },
+  {
+    label:'Living',
+    img: Sala_2,
+  },
+  {
+    label: 'Cama Matrimonial',
+    img: Dormitorio,
+  },
+  {
+    label: 'Cama Matrimonial',
+    img: Dormitorio_2,
+  },
+  {
+    label: 'Somier 1 Plaza',
+    img: Dormitorio_3,
+  },
+  {
+    label: 'Cocina',
+    img: Cocina,
+  }, 
+  {
+    label: 'Cocina',
+    img: Cocina_2,
+  },
+  {
+    label: 'Cocina',
+    img: Cocina_3,
   },
   {
     label: 'Baño',
-    img: bathroom8A,
-  }, 
+    img: Baño,
+  },
+  {
+    label: 'Baño',
+    img: Baño_2,
+  },
 ]
 
 const Carousel2A = () => (
