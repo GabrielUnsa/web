@@ -56,7 +56,7 @@ const CarouselGallery = () => (
         src={step.img}
         alt="First slide"
         width='55%'
-        height='680'
+        height='600'
       />
       <Carousel.Caption>
         <h4> {step.label} </h4>

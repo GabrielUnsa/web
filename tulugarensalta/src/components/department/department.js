@@ -15,14 +15,14 @@ const departmentsGorriti = [
     img: imgP4,
     label: 'G5D_P',
     title: 'Gorriti 1',
-    description: 'Monoambiente espacioso ideal para 2 a 4 personas. Vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
+    description: 'Amplio monoambiente ideal para 2 a 4 personas. Vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
     modal: <Modal5G/>,
   },
   {
     img: imgP5,
     label: '8FD_P',
     title: 'Gorriti 2',
-    description: 'Departamento con 1 dormitorio, ideal para 2 a 4 personas. Cuenta con balcon con vista a las montañas. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
+    description: 'Amplio monoambiente de 1 dormitorio, ideal para 2 a 4 personas con balcon. \n Ubicado a 6 cuadras de la plaza principal y 2 del "Boliche Balderrama".',
     modal: <Modal8F/>,
   },
   {
