@@ -31,7 +31,7 @@ const ServiceGrid  = () => (
     <Row className="leftText">
       <Col> <h2> <FaBath /> Baño Privado </h2>  </Col>
       <Col> <h2> <ImageHeirDryer className="sizeIcon"/> Secador </h2> </Col>
-      <Col> <h2> <img src={ImageBlanket} alt="" className="sizeIcon" /> Ropa Blanca y Savanas </h2> </Col>
+      <Col> <h2> <img src={ImageBlanket} alt="" className="sizeIcon" /> Ropa Blanca y Sabanas </h2> </Col>
     </Row>
     <br />
     <Row className="leftText">
