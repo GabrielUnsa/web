@@ -21,7 +21,7 @@ export default function FormContact( props ){
   const sendEmail = (e) => {
     e.preventDefault();
     if ( captcha.current.getValue() ){
-      emailjs.sendForm('service_oqsdh7t', 'template_yzwzhx4', form.current, 'KTC9fGDgw5scUYgrl')
+      emailjs.sendForm( 'service_csy59t9', 'template_y3nikpr', form.current, 'gMshLB0C3T5Y5WygS')
         .then((result) => {
           swal("Consulta Enviada!", "Gracias por enviar su consulta!", "success");
           e.target.reset();

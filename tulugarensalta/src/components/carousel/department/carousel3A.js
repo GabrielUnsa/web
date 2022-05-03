@@ -39,11 +39,11 @@ const Carousel3A = () => (
     { images.map((step) => (
     <Carousel.Item key={step.img}>
       <img
-        className="flex"
+        className="img-fluid"
         src={step.img}
         alt="First slide"
         width='100%'
-        height='600'
+        height='auto'
       />
       <Carousel.Caption>
         <h2>{ step.label }</h2>
